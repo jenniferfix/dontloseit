@@ -5,6 +5,8 @@ export const relations = defineRelations(tables, (r) => ({
 	container: {
 		parent: r.one.container({ from: r.container.parentId, to: r.container.id }),
 		user: r.one.user({ from: r.container.userId, to: r.user.id }),
+		children: r.many.container(),
+		items: r.many.item(),
 	},
 	item: {
 		container: r.one.container({
@@ -22,5 +24,7 @@ export const relations = defineRelations(tables, (r) => ({
 	user: {
 		accounts: r.many.account(),
 		sessions: r.many.session(),
+		containers: r.many.container(),
+		items: r.many.item(),
 	},
 }));
