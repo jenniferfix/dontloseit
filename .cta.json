@@ -1,0 +1,34 @@
+{
+  "bundler": "vite",
+  "projectName": "dont-lose-it",
+  "mode": "file-router",
+  "typescript": true,
+  "packageManager": "pnpm",
+  "includeExamples": false,
+  "tailwind": true,
+  "projectPreset": "default",
+  "routerOnly": false,
+  "addOnOptions": {
+    "drizzle": {
+      "database": "postgresql"
+    }
+  },
+  "git": true,
+  "install": true,
+  "intent": true,
+  "version": 1,
+  "framework": "react",
+  "chosenAddOns": [
+    "biome",
+    "nitro",
+    "sentry",
+    "compiler",
+    "drizzle",
+    "shadcn",
+    "tanstack-query",
+    "oRPC",
+    "better-auth",
+    "form",
+    "table"
+  ]
+}
