@@ -7,9 +7,9 @@ export const Route = createFileRoute("/_auth/canvas")({
 
 function RouteComponent() {
 	return (
-		<div>
+		<div className="flex h-dvh flex-col">
 			<Header />
-			<div>
+			<div className="min-h-0 flex-1 overflow-hidden">
 				<Outlet />
 			</div>
 		</div>
